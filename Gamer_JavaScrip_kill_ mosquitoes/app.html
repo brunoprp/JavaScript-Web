@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="gamer.js"></script>
+
+    </head>
+
+    <body onresize="ajustsSizeWindowGamer()">
+        <div class="panel">
+            <div class="lifes">
+                <img id="v1" src="images/coracao_cheio.png"/>
+                <img id="v2" src="images/coracao_cheio.png"/>
+                <img id="v3" src="images/coracao_cheio.png"/>
+            </div>
+
+            <div class="cronometro">Tempo restante: <span id= "cronome"></span></div>
+        </div>
+
+        <script>
+            document.getElementById('cronome').innerHTML = time
+            setInterval(function(){ randomPosition()}, 2000)
+
+            
+        
+        </script>
+
+    </body>
+
+</html>
